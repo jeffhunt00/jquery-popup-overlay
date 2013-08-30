@@ -1,7 +1,7 @@
 /**
  * jQuery Popup Overlay
  *
- * @version 1.4.3
+ * @version 1.4.4
  * @requires jQuery v1.7.1+
  * @link http://vast-eng.github.com/jquery-popup-overlay/
  * @author Ivan Lazarevic, Vladimir Siljkovic, Branko Sekulic, Marko Jankovic
@@ -183,7 +183,7 @@
                  */
                 if (options.action == 'click') {
                     // open
-                    $(triggerelement).live('click', function(e) {
+                    $(triggerelement).on('click', function(e) {
                         if ($el.is(':hidden')) {
                             var or = $(this).attr('data-popup-order');
                             dopopup(el, or);
@@ -351,9 +351,9 @@
                 }
 
                 /**
-                 * onOpen Callback
+                 * onopen Callback
                  */
-                callback(options.onOpen, clickplace);
+                callback(options.onopen, clickplace);
 
                 /**
                  * Close popup on blur
@@ -455,9 +455,9 @@
                 }
 
                 /**
-                 * onClose callback
+                 * onclose callback
                  */
-                callback(options.onClose, lastclicked[el.id]);
+                callback(options.onclose, lastclicked[el.id]);
             };
 
         /**
