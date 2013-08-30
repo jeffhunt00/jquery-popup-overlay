@@ -5,6 +5,9 @@
  * @requires jQuery v1.7.1+
  * @link http://vast-eng.github.com/jquery-popup-overlay/
  * @author Ivan Lazarevic, Vladimir Siljkovic, Branko Sekulic, Marko Jankovic
+ * 
+ * Updated by jeffhunt00
+ * https://github.com/jeffhunt00/jquery-popup-overlay
  */
 
 ;(function($) {
