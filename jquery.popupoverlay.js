@@ -135,7 +135,7 @@
                         textAlign: 'left',
                         position: 'relative',
                         verticalAlign: 'middle'
-                    }).addClass('popup_content');
+                    }).addClass('popup');
 
                     $el.wrap('<div id="' + el.id + '_wrapper" class="popup_wrapper" />');
                     $wrapper = $('#' + el.id + '_wrapper');
